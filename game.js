@@ -26,7 +26,16 @@ $(document).keypress(function() {
         flag =1;
     }   
 });
-
+$(document).touch(function() {
+    if(flag==0 && restartVal==0)
+    {
+        //$("h1").html("level "+level);
+        setTimeout(() => {
+            nextSequence() 
+        }, 500);
+        flag =1;
+    }   
+});
 function nextSequence() 
 {
     $("h1").html("level "+level);
