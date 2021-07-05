@@ -26,7 +26,7 @@ $(document).keypress(function() {
         flag =1;
     }   
 });
-$(document).touch(function() {
+$(document).on("tap",function() {
     if(flag==0 && restartVal==0)
     {
         //$("h1").html("level "+level);
